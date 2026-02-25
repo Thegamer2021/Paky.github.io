@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio fotografico notturno di Pasquale Magro: fotografia hobbistica e riprese drone.">
+  <title>Pasquale Magro | Portfolio Fotografico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="photo-portfolio.css">
+</head>
+<body>
+  <div class="photo-bg" aria-hidden="true"></div>
+
+  <header class="photo-header" id="top">
+    <a class="photo-brand" href="index.php"><span>PM</span> Pasquale Magro</a>
+    <button id="photoNavToggle" class="photo-nav-toggle" aria-expanded="false" aria-controls="photoNav">Menu</button>
+    <nav id="photoNav" class="photo-nav">
+      <a href="#gallery">Galleria</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#contact">Contatti</a>
+      <a class="return-main" href="index.php">Portfolio principale</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="photo-hero reveal">
+      <p class="eyebrow">Portfolio Fotografico</p>
+      <h1>Fotografia hobbistica e riprese drone</h1>
+      <p class="lead">Una selezione visuale costruita per narrare prospettiva, luce e composizione. Tema notturno, pulito e professionale.</p>
+      <div class="hero-stats">
+        <article>
+          <strong data-counter="48">0</strong>
+          <span>Scatti selezionati</span>
+        </article>
+        <article>
+          <strong data-counter="6">0</strong>
+          <span>Set fotografici</span>
+        </article>
+        <article>
+          <strong data-counter="4">0</strong>
+          <span>Categorie principali</span>
+        </article>
+      </div>
+      <a class="hero-link" href="index.php">Torna al portfolio sviluppo</a>
+    </section>
+
+    <section id="gallery" class="gallery-section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Galleria</p>
+        <h2>Selezione fotografica</h2>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filtri galleria">
+        <button class="filter-btn is-active" data-filter="all" type="button">Tutto</button>
+        <button class="filter-btn" data-filter="aerial" type="button">Drone</button>
+        <button class="filter-btn" data-filter="street" type="button">Street</button>
+        <button class="filter-btn" data-filter="night" type="button">Night</button>
+        <button class="filter-btn" data-filter="portrait" type="button">Portrait</button>
+      </div>
+
+      <div id="galleryGrid" class="gallery-grid">
+        <article class="photo-card span-6" data-category="aerial">
+          <button class="photo-open" type="button" data-src="https://picsum.photos/seed/paky-aerial-1/1400/900" data-caption="Aerial Frame 01">
+            <img src="https://picsum.photos/seed/paky-aerial-1/700/450" alt="Ripresa drone panoramica 1" loading="lazy">
+            <span class="photo-tag">Drone</span>
+            <span class="photo-title">Aerial Frame 01</span>
+          </button>
+        </article>
+        <article class="photo-card span-3" data-category="street">
+          <button class="photo-open" type="button" data-src="https://picsum.photos/seed/paky-street-1/1100/1400" data-caption="Street Rhythm 02">
+            <img src="https://picsum.photos/seed/paky-street-1/550/700" alt="Fotografia street 1" loading="lazy">
+            <span class="photo-tag">Street</span>
+            <span class="photo-title">Street Rhythm 02</span>
+          </button>
+        </article>
+        <article class="photo-card span-3" data-category="night">
+          <button class="photo-open" type="button" data-src="https://picsum.photos/seed/paky-night-1/1100/1400" data-caption="Night Geometry 03">
+            <img src="https://picsum.photos/seed/paky-night-1/550/700" alt="Fotografia notturna urbana 1" loading="lazy">
+            <span class="photo-tag">Night</span>
+            <span class="photo-title">Night Geometry 03</span>
+          </button>
+        </article>
+        <article class="photo-card span-4" data-category="portrait">
+          <button class="photo-open" type="button" data-src="https://picsum.photos/seed/paky-portrait-1/1200/900" data-caption="Portrait Session 04">
+            <img src="https://picsum.photos/seed/paky-portrait-1/600/450" alt="Ritratto fotografico 1" loading="lazy">
+            <span class="photo-tag">Portrait</span>
+            <span class="photo-title">Portrait Session 04</span>
+          </button>
+        </article>
+        <article class="photo-card span-4" data-category="aerial">
+          <button class="photo-open" type="button" data-src="https://picsum.photos/seed/paky-aerial-2/1200/900" data-caption="Aerial Frame 05">
+            <img src="https://picsum.photos/seed/paky-aerial-2/600/450" alt="Ripresa drone panoramica 2" loading="lazy">
+            <span class="photo-tag">Drone</span>
+            <span class="photo-title">Aerial Frame 05</span>
+          </button>
+        </article>
+        <article class="photo-card span-4" data-category="street">
+          <button class="photo-open" type="button" data-src="https://picsum.photos/seed/paky-street-2/1200/900" data-caption="Street Rhythm 06">
+            <img src="https://picsum.photos/seed/paky-street-2/600/450" alt="Fotografia street 2" loading="lazy">
+            <span class="photo-tag">Street</span>
+            <span class="photo-title">Street Rhythm 06</span>
+          </button>
+        </article>
+        <article class="photo-card span-3" data-category="night">
+          <button class="photo-open" type="button" data-src="https://picsum.photos/seed/paky-night-2/1100/1400" data-caption="Night Geometry 07">
+            <img src="https://picsum.photos/seed/paky-night-2/550/700" alt="Fotografia notturna urbana 2" loading="lazy">
+            <span class="photo-tag">Night</span>
+            <span class="photo-title">Night Geometry 07</span>
+          </button>
+        </article>
+        <article class="photo-card span-3" data-category="portrait">
+          <button class="photo-open" type="button" data-src="https://picsum.photos/seed/paky-portrait-2/1100/1400" data-caption="Portrait Session 08">
+            <img src="https://picsum.photos/seed/paky-portrait-2/550/700" alt="Ritratto fotografico 2" loading="lazy">
+            <span class="photo-tag">Portrait</span>
+            <span class="photo-title">Portrait Session 08</span>
+          </button>
+        </article>
+        <article class="photo-card span-6" data-category="aerial">
+          <button class="photo-open" type="button" data-src="https://picsum.photos/seed/paky-aerial-3/1400/900" data-caption="Aerial Frame 09">
+            <img src="https://picsum.photos/seed/paky-aerial-3/700/450" alt="Ripresa drone panoramica 3" loading="lazy">
+            <span class="photo-tag">Drone</span>
+            <span class="photo-title">Aerial Frame 09</span>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="workflow-section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Workflow</p>
+        <h2>Come lavoro sul contenuto visuale</h2>
+      </div>
+      <div class="workflow-grid">
+        <article>
+          <h3>1. Pianificazione</h3>
+          <p>Scelta location, orari luce, composizione e tipo di uscita drone/scatto.</p>
+        </article>
+        <article>
+          <h3>2. Produzione</h3>
+          <p>Sessione fotografica con attenzione a ritmo visivo, geometrie e narrativa.</p>
+        </article>
+        <article>
+          <h3>3. Selezione</h3>
+          <p>Curatela finale per mantenere coerenza estetica e qualita del portfolio.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section reveal">
+      <p class="eyebrow">Collegamenti</p>
+      <h2>Dal visual al codice</h2>
+      <p class="lead">Questa area fotografica e parte dello stesso ecosistema professionale del portfolio sviluppo.</p>
+      <a class="hero-link" href="index.php">Apri portfolio principale</a>
+    </section>
+  </main>
+
+  <footer class="photo-footer">
+    <p>&copy; <span id="photoYear"></span> Pasquale Magro</p>
+    <a href="#top">Torna su</a>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Anteprima foto">
+    <button id="lightboxClose" class="lightbox-close" type="button" aria-label="Chiudi">&times;</button>
+    <img id="lightboxImage" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="photo-portfolio.js"></script>
+</body>
+</html>
