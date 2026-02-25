@@ -331,7 +331,6 @@ h3 {
 .panel,
 .service-card,
 .project-card,
-.contact-form,
 .contact-panel {
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -541,6 +540,11 @@ h3 {
   grid-template-columns: 0.9fr 1.1fr;
 }
 
+.contact-layout-single {
+  grid-template-columns: 1fr;
+  max-width: 760px;
+}
+
 .contact-panel {
   padding: 1.1rem;
   transition: transform var(--transition-medium), border-color var(--transition-fast), box-shadow var(--transition-medium);
@@ -573,56 +577,11 @@ h3 {
   transform: translateX(3px);
 }
 
-.contact-form {
-  padding: 1rem;
-  display: grid;
-  gap: 0.82rem;
-}
-
-.contact-form label {
-  display: grid;
-  gap: 0.4rem;
-  font-weight: 500;
-}
-
-.contact-form input,
-.contact-form textarea {
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  padding: 0.72rem 0.82rem;
-  font: inherit;
-  color: var(--text-main);
-  background: rgba(16, 31, 50, 0.92);
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 2px solid rgba(103, 182, 255, 0.44);
-  outline-offset: 1px;
-}
-
-.hp-field {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.form-notice {
-  min-height: 1.2rem;
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-.form-notice.success {
-  color: #62d9b4;
-}
-
-.form-notice.error {
-  color: #f28b82;
+.contact-mail-link {
+  margin-top: 0.35rem;
+  font-size: 1.08rem;
+  font-family: var(--font-heading);
+  color: #e9f6ff;
 }
 
 .site-footer {

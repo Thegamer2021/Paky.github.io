@@ -7,8 +7,6 @@ const yearNode = document.getElementById("currentYear");
 const roleRotator = document.getElementById("roleRotator");
 const tiltCards = Array.from(document.querySelectorAll(".tilt-card"));
 const pointerGlow = document.getElementById("pointerGlow");
-const formNotice = document.getElementById("formNotice");
-const contactForm = document.getElementById("contactForm");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (yearNode) {
@@ -145,18 +143,6 @@ if (pointerGlow && !reducedMotion && window.matchMedia("(pointer: fine)").matche
   }
 
   requestAnimationFrame(renderGlow);
-}
-
-if (contactForm && formNotice) {
-  const fields = Array.from(contactForm.querySelectorAll("input, textarea"));
-  fields.forEach((field) => {
-    field.addEventListener("input", () => {
-      if (formNotice.classList.contains("error")) {
-        formNotice.textContent = "";
-        formNotice.className = "form-notice";
-      }
-    });
-  });
 }
 
 function supportsRevealAnimation() {
